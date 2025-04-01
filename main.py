@@ -9,8 +9,6 @@ FEEDS = {
     "medium_tech": "https://medium.com/feed/tag/tech",
     "medium_technology": "https://medium.com/feed/tag/technology",
     "medium_tech_news": "https://medium.com/feed/tag/tech-news",
-    "medium_startups": "https://medium.com/feed/tag/startups",
-    "medium_gadgets": "https://medium.com/feed/tag/gadgets",
     "dev.to": "https://dev.to/feed/",
     "stackoverflow": "https://stackoverflow.blog/feed/",
     "hackernews": "https://hnrss.org/frontpage",
@@ -55,8 +53,10 @@ def search():
         articles.extend(entries)
 
     results = [
-        article for article in articles if query.lower() in article[1].title.lower()
+        article for article in articles if query.lower() in article[1].title.lower() or  query.lower()  in  article[0] or article[0] in query.lower()
     ]
+
+    print(articles[0])
 
     return render_template("search_results.html", articles=results, query=query)
 

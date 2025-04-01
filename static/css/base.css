@@ -29,6 +29,10 @@ header {
     margin-bottom: 100px;
 }
 
+main {
+    padding: 30px 10px 60px 10px;
+}
+
 
 header nav form{
     margin-inline: 20px;
@@ -73,8 +77,36 @@ main .next ,main .prev {
     color: black;
     font-family: Poppins;
     margin: 20px;
+    box-shadow: 0 5px 0 grey;
 }
 
 main .next:hover ,main .prev:hover {
     background: rgb(223, 223, 223);
+}
+
+main .next:active ,main .prev:active {
+    box-shadow: 0 2px 0 grey;
+}
+
+main article .source {
+    background: rgb(253, 253, 245);
+    border-radius: 3px;
+    padding:5px 10px;
+    display:inline-block;
+    font-size: 1.15rem;
+    margin-block: 5px;
+}
+
+
+main article .date {
+    background: rgb(249, 249, 255);
+    border-radius: 3px;
+    padding:5px;
+    display:inline-block;
+    font-size: 0.8rem;
+}
+
+main .search-info {
+    font-size: 1.25rem;
+    font-family: roboto, poppins;
 }
