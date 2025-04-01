@@ -4,6 +4,7 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
+
 FEEDS = {
     "medium_tech": "https://medium.com/feed/tag/tech",
     "medium_technology": "https://medium.com/feed/tag/technology",
