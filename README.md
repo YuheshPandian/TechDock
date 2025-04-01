@@ -11,7 +11,7 @@ TechDock is an RSS feed blog aggregator designed to collect, organize, and displ
 
 ## Usage
 
-Find the website at [techdock.onrender.com](https:\\techdock.onrender.com)
+Find the website at [techdock.onrender.com](https://techdock.onrender.com)
 
 ## Contributing
 
