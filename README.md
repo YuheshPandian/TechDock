@@ -11,13 +11,7 @@ TechDock is an RSS feed blog aggregator designed to collect, organize, and displ
 
 ## Usage
 
-- **Adding a New RSS Feed**:
-  - Navigate to the 'Add Feed' section.
-  - Enter the RSS feed URL of the blog you wish to add.
-  - Click 'Submit' to include the feed in your aggregator.
-- **Viewing Aggregated Posts**:
-  - The home page displays the latest posts from all subscribed blogs.
-  - Click on any post title to read the full content.
+Find the website @ techdock.onrender.com
 
 ## Contributing
 
