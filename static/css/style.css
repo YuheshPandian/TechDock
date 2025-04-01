@@ -110,3 +110,30 @@ main .search-info {
     font-size: 1.25rem;
     font-family: roboto, poppins;
 }
+
+header nav .search-input {
+    border:1px solid grey;
+    padding:5px;
+    outline:0;
+    font-family: poppins, roboto, arial;
+}
+
+header nav .search-input:focus{
+    border:2px solid grey
+}
+
+header nav .search-button {
+    background: transparent;
+    padding:5px;
+    outline:0;
+    border:1px solid black;
+    font-family: poppins, roboto, arial;
+    transition: 300ms ease;
+}
+
+header nav .search-button:hover {
+    background: black;
+    padding:5px;
+    font-family: poppins, roboto, arial;
+    color:white;
+}

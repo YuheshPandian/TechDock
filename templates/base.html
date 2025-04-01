@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>TechDOCK</title><link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <link rel="stylesheet" href="{{  url_for('static',filename='css/base.css') }}">
+    <link rel="stylesheet" href="{{  url_for('static',filename='css/style.css') }}">
 
 </head>
 <body>
 <header>
     <nav>
-        <span class="logo"><img src="{{ url_for('static', filename='img/TechDOCK.png') }}" alt="logo" width="150px"></span>
+        <span class="logo"><img src="{{ url_for('static', filename='img/TechDOCK.png') }}" alt="logo" width="125px"></span>
         <form action="{{ url_for('search') }}" method="GET">
-        <input type="text" name="q" placeholder="Search For Keyword">
-        <button type="submit">Search</button>
+        <input type="text" name="q" class="search-input" placeholder="Search For Keyword">
+        <button type="submit" class="search-button">Search</button>
     </form>
     </nav>
     
