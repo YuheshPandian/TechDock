@@ -2,16 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>TechDock</title><link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>TechDOCK</title><link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{  url_for('static',filename='css/base.css') }}">
+
 </head>
 <body>
 <header>
-    <h1>Blogs at your cursor</h1>
-    <form action="{{ url_for('search') }}" method="GET">
+    <nav>
+        <span class="logo"><img src="{{ url_for('static', filename='img/TechDOCK.png') }}" alt="logo" width="150px"></span>
+        <form action="{{ url_for('search') }}" method="GET">
         <input type="text" name="q" placeholder="Search For Keyword">
         <button type="submit">Search</button>
     </form>
+    </nav>
+    
 </header>
-{% block content %}{% endblock %}
+
+<main>
+    {% block content %}{% endblock %}
+</main>
+
 </body>
 </html>

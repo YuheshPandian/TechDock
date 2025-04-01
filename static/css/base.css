@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+
+header nav {
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(255, 255, 255);
+    background: white;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index: 100;
+    border-bottom: 1px solid black;
+    
+}
+
+header {
+    margin-bottom: 100px;
+}
+
+
+header nav form{
+    margin-inline: 20px;
+}
+
+
+main article {
+    margin: 20px;
+    border-bottom: 2px solid rgb(91, 91, 91);
+    padding:20px;
+    font-family: Roboto, arial;
+}
+
+main article h2 {
+    font-size: 1.65rem;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+main article h2 a{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    transition: ease-in;
+    position: relative;
+}
+
+main article h2 a::after{
+    content: "🔗";
+    position: absolute;
+    opacity: 0;
+    transition: 300ms ease;
+}
+
+main article h2 a:hover::after{
+    opacity: 100%;
+}
+
+main .next ,main .prev {
+    background: rgb(240, 240, 240);
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    font-family: Poppins;
+    margin: 20px;
+}
+
+main .next:hover ,main .prev:hover {
+    background: rgb(223, 223, 223);
+}
