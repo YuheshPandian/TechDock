@@ -30,7 +30,7 @@ header {
 }
 
 main {
-    padding: 30px 10px 60px 10px;
+    padding: 10px;
 }
 
 
@@ -136,4 +136,9 @@ header nav .search-button:hover {
     padding:5px;
     font-family: poppins, roboto, arial;
     color:white;
+}
+
+.pages-info {
+    margin-top:50px;
+    font-family: roboto, poppins,Arial, Helvetica, sans-serif;
 }

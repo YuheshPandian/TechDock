@@ -20,4 +20,5 @@
             <a href="{{ url_for('index', page=page+1) }}" class="next">Next</a>
         {% endif %}
     </div>
+    <p class="pages-info">Total Pages: {{ total_pages }} &nbsp;&nbsp; Current Page: {{ page }}</p>
 {% endblock %}
