@@ -14,6 +14,7 @@ FEEDS = {
     "hackernews": "https://hnrss.org/frontpage",
     "css-tricks": "https://css-tricks.com/feed/",
     "Github": "https://github.blog/feed/",
+    "hashnode":"https://yourblog.hashnode.dev/rss.xml"
 }
 
 
