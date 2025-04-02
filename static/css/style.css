@@ -236,4 +236,8 @@ header nav .search-button:hover {
     header nav form .home-link {
         display:none;
     }
+
+    main .next , main .prev{
+        margin-top:20px;
+    }
 }
