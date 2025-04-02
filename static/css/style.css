@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
 
 * {
     margin: 0;
@@ -10,7 +12,7 @@
 
 
 header nav {
-    padding: 10px 10px 10px 10px;
+    padding: 1rem 1rem 1rem 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -38,6 +40,10 @@ header nav form{
     margin-inline: 20px;
 }
 
+
+main article .author-icon {
+    width:15px;
+}
 
 main article {
     margin: 20px;
@@ -72,7 +78,7 @@ main article h2 a:hover::after{
 main .next ,main .prev {
     background: rgb(240, 240, 240);
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 5px 10px;
     text-decoration: none;
     color: black;
     font-family: Poppins;
@@ -89,26 +95,29 @@ main .next:active ,main .prev:active {
 }
 
 main article .source {
-    background: rgb(253, 253, 245);
+    background: rgb(255, 255, 237);
     border-radius: 3px;
     padding:5px 10px;
-    display:inline-block;
-    font-size: 1.15rem;
+    display:inline;
     margin-block: 5px;
+    font-family:'Afacad', Arial, Helvetica, sans-serif;
 }
 
 
 main article .date {
-    background: rgb(249, 249, 255);
+    background: rgb(243, 243, 255);
     border-radius: 3px;
     padding:5px;
-    display:inline-block;
-    font-size: 0.8rem;
+    display:inline;
+    font-family:'DM Mono', Arial, Helvetica, sans-serif;
 }
+
+/* SEARCH BAR AND INFO */
+
 
 main .search-info {
     font-size: 1.25rem;
-    font-family: roboto, poppins;
+    font-family: Afacad, poppins;
 }
 
 header nav .search-input {
@@ -134,11 +143,63 @@ header nav .search-button {
 header nav .search-button:hover {
     background: black;
     padding:5px;
-    font-family: poppins, roboto, arial;
     color:white;
 }
 
 .pages-info {
     margin-top:50px;
-    font-family: roboto, poppins,Arial, Helvetica, sans-serif;
+    font-family: 'DM Mono', poppins,Arial, Helvetica, sans-serif;
+}
+
+
+@media (max-width:1000px) {
+    header nav{
+        flex-direction: column;
+        background:rgb(0, 0, 0);
+    }
+
+    header nav .logo {
+        display: none;
+    }
+
+    header nav .search-input {
+        width:70dvw;
+        height: 7vw;
+        font-size: 1.25rem;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.892);
+    }
+
+    header nav .search-input::placeholder {
+        font-size: 1.25rem;
+    }
+
+    header nav .search-button {
+        display:none;
+    }
+    main article .author-icon {
+        width:30px;
+    }
+}
+
+
+@media (max-width:720px) {
+
+
+    header nav .search-input{
+        width:90vw;
+        height:100%;
+        margin:0;
+    }
+
+    main article h2 {
+        font-size: 1.25rem;
+    }
+
+    main article .source {
+        font-size: 14px;
+    }
+    main article .date {
+        font-size: 8px;
+    }
 }

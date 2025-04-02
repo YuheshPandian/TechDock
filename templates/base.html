@@ -10,7 +10,7 @@
 <body>
 <header>
     <nav>
-        <span class="logo"><img src="{{ url_for('static', filename='img/TechDOCK.png') }}" alt="logo" width="125px"></span>
+        <img src="{{ url_for('static', filename='img/TechDOCK.png') }}" alt="logo" width="125px" class="logo">
         <form action="{{ url_for('search') }}" method="GET">
         <input type="text" name="q" class="search-input" placeholder="Search For Keyword">
         <button type="submit" class="search-button">Search</button>

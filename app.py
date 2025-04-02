@@ -56,10 +56,8 @@ def search():
         article for article in articles if query.lower() in article[1].title.lower() or  query.lower()  in  article[0] or article[0] in query.lower()
     ]
 
-    print(articles[0])
-
     return render_template("search_results.html", articles=results, query=query)
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="192.168.1.5",port=8000,debug=True)
