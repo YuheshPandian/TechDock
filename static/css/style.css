@@ -189,6 +189,10 @@ header nav .search-button:hover {
         width:30px;
     }
 
+    main article {
+        margin:0;
+    }
+
     header nav form .home-link{
         position: absolute;
         left:20px;
@@ -212,10 +216,14 @@ header nav .search-button:hover {
         margin:0;
     }
 
+    main article {
+        margin:0;
+    }
+
     main article h2 {
         font-size: 1.25rem;
     }
-    main article .author-icon {
+    main article .author .author-icon {
         width:30px;
     }
 
