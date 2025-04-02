@@ -210,6 +210,10 @@ header nav .search-button:hover {
         padding:5px;
     }
 
+
+    header {
+        margin-bottom: 10px;
+    }
     header nav .search-input{
         width:90vw;
         height:100%;
@@ -220,11 +224,15 @@ header nav .search-button:hover {
         margin:0;
     }
 
+    main article:last-child {
+        margin-bottom: 10px;
+    }
+
     main article h2 {
         font-size: 1.25rem;
     }
     main article .author .author-icon {
-        width:30px;
+        width:15px;
     }
 
     main article .source {
@@ -237,7 +245,7 @@ header nav .search-button:hover {
         display:none;
     }
 
-    main .next , main .prev{
-        margin-top:20px;
+    main .next ,main .prev {
+        margin: 10px;
     }
 }
