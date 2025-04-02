@@ -127,6 +127,14 @@ main .search-info {
     font-family: Afacad, poppins;
 }
 
+main .back-home {
+    font-size: 1.25rem;
+    font-family: Afacad, poppins;
+    color:grey;
+    text-decoration: none;
+    display:none;
+}
+
 header nav .search-input {
     border:1px solid grey;
     padding:5px;
@@ -243,6 +251,10 @@ header nav .search-button:hover {
     }
     header nav form .home-link {
         display:none;
+    }
+
+    main .back-home {
+        display: block;
     }
 
     main .next ,main .prev {
