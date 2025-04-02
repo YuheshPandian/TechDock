@@ -209,6 +209,14 @@ header nav .search-button:hover {
         width:38px;
     }
 
+    main .next ,main .prev {
+        margin: 10px;
+    }
+
+    header {
+        margin-bottom: 10px;
+    }
+
 }
 
 
@@ -219,9 +227,6 @@ header nav .search-button:hover {
     }
 
 
-    header {
-        margin-bottom: 10px;
-    }
     header nav .search-input{
         width:90vw;
         height:100%;
@@ -257,7 +262,4 @@ header nav .search-button:hover {
         display: block;
     }
 
-    main .next ,main .prev {
-        margin: 10px;
-    }
 }
