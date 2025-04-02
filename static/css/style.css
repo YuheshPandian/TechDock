@@ -217,6 +217,10 @@ header nav .search-button:hover {
         margin-bottom: 10px;
     }
 
+    main article:last-child {
+        margin-bottom: 20px;
+    }
+
 }
 
 
@@ -235,10 +239,6 @@ header nav .search-button:hover {
 
     main article {
         margin:0;
-    }
-
-    main article:last-child {
-        margin-bottom: 20px;
     }
 
     main article h2 {
