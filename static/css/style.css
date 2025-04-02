@@ -191,6 +191,11 @@ header nav .search-button:hover {
         font-size: 1.25rem;
     }
 
+    header:focus {
+        outline:0;
+        border:0;
+    }
+
     header nav .search-button {
         display:none;
     }
