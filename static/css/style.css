@@ -217,7 +217,7 @@ header nav .search-button:hover {
         margin-bottom: 10px;
     }
 
-    main .articles:last-child {
+    main article:last-child {
         margin-bottom: 20px;
     }
 
