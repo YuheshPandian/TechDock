@@ -38,8 +38,15 @@ main {
 
 header nav form{
     margin-inline: 20px;
+    display: flex;
+    align-items: center;
+    gap:10px;
 }
 
+header nav form .home-link {
+    opacity:50%;
+    width:30px;
+}
 
 main article .author-icon {
     width:15px;
@@ -156,6 +163,7 @@ header nav .search-button:hover {
     header nav{
         flex-direction: column;
         background:rgb(0, 0, 0);
+        position: relative;
     }
 
     header nav .logo {
@@ -180,6 +188,15 @@ header nav .search-button:hover {
     main article .author-icon {
         width:30px;
     }
+
+    header nav form .home-link{
+        position: absolute;
+        left:20px;
+        top:35px;
+        opacity: 100%;
+        width:38px;
+    }
+
 }
 
 
@@ -201,5 +218,8 @@ header nav .search-button:hover {
     }
     main article .date {
         font-size: 8px;
+    }
+    header nav form .home-link {
+        display:none;
     }
 }

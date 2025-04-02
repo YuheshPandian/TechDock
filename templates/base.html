@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechDOCK</title><link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="{{  url_for('static',filename='css/style.css') }}">
     <link rel="icon" href="../static/img/favicon.ico" type="image/x-icon">
+    <meta name="description" content="A blog aggregator that brings all tech-related blogs under your cursor. Made for programmers by a programmer">
+    <meta name="author" content="Yuhesh Pandian">
+    <meta name="keywords" content="RSS feed, content aggregator, flask, TechDOCK, python, yuhesh pandian,blog website, blogs,techdock,blog aggregator ">
 
 </head>
 <body>
@@ -12,6 +16,7 @@
     <nav>
         <img src="{{ url_for('static', filename='img/TechDOCK.png') }}" alt="logo" width="125px" class="logo">
         <form action="{{ url_for('search') }}" method="GET">
+        <a href="/"><img src="{{ url_for('static',filename='img/house-solid.svg') }}" class="home-link" alt="home-link" width="38px"></a>
         <input type="text" name="q" class="search-input" placeholder="Search For Keyword">
         <button type="submit" class="search-button">Search</button>
     </form>
