@@ -212,6 +212,9 @@ header nav .search-button:hover {
     main article h2 {
         font-size: 1.25rem;
     }
+    main article .author-icon {
+        width:30px;
+    }
 
     main article .source {
         font-size: 14px;
