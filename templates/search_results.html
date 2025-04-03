@@ -7,7 +7,7 @@
         {% for article in articles %}
             <article>
                 <h2><a href="{{ article[1].link }}">{{ article[1].title }}</a></h2>
-                <p class="author"><img src="{{ url_for('static', filename='img/user-solid.svg') }}" alt="author-icon" class="author-icon">&nbsp;&nbsp;&nbsp;{{  article[1].author }}</p>
+                <p class="author"><img src="{{ url_for('static', filename='img/user-solid.svg') }}" alt="author-icon" class="author-icon">&nbsp;&nbsp;&nbsp;{{  article[1].author if article[1].author else "No Author" }}</p>
                 <p class="source">{{ article[0] }}</p>
                 <br>
                 <p class="date">{{ article[1].published }}</p>

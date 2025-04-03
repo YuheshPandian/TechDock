@@ -53,11 +53,17 @@ def search():
         articles.extend(entries)
 
     results = [
-        article for article in articles if query.lower() in article[1].title.lower() or  query.lower()  in  article[0] or article[0] in query.lower()
+        article
+        for article in articles
+        if query.lower() in article[1].title.lower()
+        or query.lower() in article[0]
+        or article[0] in query.lower()
+        or query.lower() in isinstance(getattr(article[1], "author", ""), str)
+        and getattr(article[1], "author", "").lower()
     ]
 
     return render_template("search_results.html", articles=results, query=query)
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
