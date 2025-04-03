@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 # Configure caching (simple in-memory caching)
 app.config["CACHE_TYPE"] = "simple"
-app.config["CACHE_DEFAULT_TIMEOUT"] = 300  # Cache timeout in seconds (5 min)
+app.config["CACHE_DEFAULT_TIMEOUT"] = 600  # Cache timeout in seconds (5 min)
 cache = Cache(app)
 cache.init_app(app)
 
@@ -23,7 +23,7 @@ FEEDS = {
 }
 
 
-@cache.cached(timeout=300)  # Cache the function for 5 minutes
+@cache.cached(timeout=600)  # Cache the function for 10 minutes
 def fetch_articles():
     """Fetch and parse RSS feeds, returning sorted articles."""
     articles = []
