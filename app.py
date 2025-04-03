@@ -58,8 +58,8 @@ def search():
         if query.lower() in article[1].title.lower()
         or query.lower() in article[0]
         or article[0] in query.lower()
-        or query.lower() in isinstance(getattr(article[1], "author", ""), str)
-        and getattr(article[1], "author", "").lower()
+        or isinstance(getattr(article[1], "author", ""), str)
+        and query.lower() in getattr(article[1], "author", "").lower()
     ]
 
     return render_template("search_results.html", articles=results, query=query)
