@@ -45,7 +45,17 @@ def fetch_articles():
     )
 
 
+@app.errorhandler(404)
+def _404page(e):
+    return render_template("404.html"), 404
+
+
 @app.route("/")
+def home():
+    return render_template("home.html")
+
+
+@app.route("/feeds")
 def index():
     """Home page with cached articles and pagination."""
     articles = fetch_articles()
@@ -59,7 +69,7 @@ def index():
     paginated_articles = articles[start:end]
 
     return render_template(
-        "index.html", articles=paginated_articles, page=page, total_pages=total_pages
+        "feeds.html", articles=paginated_articles, page=page, total_pages=total_pages
     )
 
 
