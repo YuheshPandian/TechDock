@@ -102,6 +102,12 @@
             .search-box {
                 margin-top: 10px;
             }
+            .search-input {
+                width: 80vw;
+            }
+            .logo {
+                display: none;
+            }
             .container {
                 width: 90%;
                 padding: 20px;
@@ -121,7 +127,7 @@
             <img src="{{ url_for('static', filename='img/TechDOCK.png') }}" alt="TechDOCK Logo">
         </div>
         <form class="search-box" action="search" method="GET">
-            <input type="text" name="q" placeholder="Search...">
+            <input type="text" name="q"  class="search-input" placeholder="Search...">
             <button type="submit">Search</button>
         </form>
     </nav>
