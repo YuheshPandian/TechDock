@@ -1,4 +1,4 @@
-![banner](Techdock-banner.png)
+![banner](tech-dock-mockup.png)
 # TechDock
 
 TechDock is an RSS feed blog aggregator designed to collect, organize, and display content from various tech blogs in a centralized interface. This application enables programmers to stay updated with the latest posts from their favorite blogs without visiting each site individually.
