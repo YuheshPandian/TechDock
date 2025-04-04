@@ -84,7 +84,8 @@ def search():
         for article in articles
         if query in article[1].title.lower()
         or query in article[0].lower()
-        or query in article[1].get("author", "").lower()
+        or query in article[1].get("author", "no author").lower()
+        or query in str(article[1].get("summary", "no summary")).lower()
     ]
 
     return render_template("search_results.html", articles=results, query=query)
