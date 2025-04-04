@@ -34,3 +34,5 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 - Inspired by various open-source RSS aggregators and blog readers.
 
 ---
+
+![footer](Techdock-banner.png)
