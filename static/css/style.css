@@ -12,8 +12,8 @@
 
 body {
     background-image: 
-    linear-gradient(to right, #e4e4e42f 1px, transparent 1px),
-    linear-gradient(to bottom, #f3f3f32d 1px, transparent 1px);
+    linear-gradient(to right, #e0e0e02d 1px, transparent 1px),
+    linear-gradient(to bottom, #e0e0e02d  1px, transparent 1px);
     background-size: 20px 20px;
 }
 
